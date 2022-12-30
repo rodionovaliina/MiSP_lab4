@@ -1,0 +1,69 @@
+\hypertarget{classCipher}{}\doxysection{Класс Cipher}
+\label{classCipher}\index{Cipher@{Cipher}}
+
+
+Шифрование методом табличной перестановки  
+
+
+
+
+{\ttfamily \#include $<$Cipher.\+hpp$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCipher_ae728d0917db639dd49638a268298391f}\label{classCipher_ae728d0917db639dd49638a268298391f}} 
+\mbox{\hyperlink{classCipher_ae728d0917db639dd49638a268298391f}{Cipher}} ()=delete
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию запрещён \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_a876edcc7064f450935baedce442f1556}\label{classCipher_a876edcc7064f450935baedce442f1556}} 
+\mbox{\hyperlink{classCipher_a876edcc7064f450935baedce442f1556}{Cipher}} (std\+::wstring \&ws\+\_\+key)
+\begin{DoxyCompactList}\small\item\em Конструктор принимает ключ (количество столбцов в таблице) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_aebf6146bc7bb26d9b934ced49ed6dd19}\label{classCipher_aebf6146bc7bb26d9b934ced49ed6dd19}} 
+std\+::wstring \mbox{\hyperlink{classCipher_aebf6146bc7bb26d9b934ced49ed6dd19}{encrypt}} (std\+::wstring \&ws\+\_\+open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Метод для зашифрования \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_accb629416e343719818e557b8eb994dd}\label{classCipher_accb629416e343719818e557b8eb994dd}} 
+std\+::wstring \mbox{\hyperlink{classCipher_accb629416e343719818e557b8eb994dd}{decrypt}} (const std\+::wstring \&ws\+\_\+cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Метод для расшифрования \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_ae40ca9f1c13890b6d734aa9228d0de28}\label{classCipher_ae40ca9f1c13890b6d734aa9228d0de28}} 
+void \mbox{\hyperlink{classCipher_ae40ca9f1c13890b6d734aa9228d0de28}{set\+\_\+tableform}} (const std\+::wstring \&ws\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Формирование информации о таблице \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_a86145f7c206e6d75852a28ffe29dc47a}\label{classCipher_a86145f7c206e6d75852a28ffe29dc47a}} 
+void \mbox{\hyperlink{classCipher_a86145f7c206e6d75852a28ffe29dc47a}{set\+\_\+key}} (std\+::wstring \&ws\+\_\+key)
+\begin{DoxyCompactList}\small\item\em Установка нового ключа \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_aec5962319726c6dd1bd6ee2f7b71e001}\label{classCipher_aec5962319726c6dd1bd6ee2f7b71e001}} 
+int \mbox{\hyperlink{classCipher_aec5962319726c6dd1bd6ee2f7b71e001}{get\+Valid\+Key}} (std\+::wstring \&ws\+\_\+key)
+\begin{DoxyCompactList}\small\item\em Проверка на правильность ключа \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_a0dc9d7c13d6a7401bfee1f1171f6ee12}\label{classCipher_a0dc9d7c13d6a7401bfee1f1171f6ee12}} 
+std\+::wstring \mbox{\hyperlink{classCipher_a0dc9d7c13d6a7401bfee1f1171f6ee12}{get\+Valid\+Open\+Text}} (const std\+::wstring \&ws\+\_\+open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Проверка на правильность текста для зашифровки \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_ab0e1d86022b18c1bec07cde229ba87e6}\label{classCipher_ab0e1d86022b18c1bec07cde229ba87e6}} 
+std\+::wstring \mbox{\hyperlink{classCipher_ab0e1d86022b18c1bec07cde229ba87e6}{get\+Valid\+Cipher\+Text}} (const std\+::wstring \&ws\+\_\+cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Проверка на правильность текста для расшифровки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCipher_a771e84ee997948183d065a2804f3cda6}\label{classCipher_a771e84ee997948183d065a2804f3cda6}} 
+std\+::wstring\+\_\+convert$<$ std\+::codecvt\+\_\+utf8$<$ wchar\+\_\+t $>$, wchar\+\_\+t $>$ \mbox{\hyperlink{classCipher_a771e84ee997948183d065a2804f3cda6}{codec}}
+\begin{DoxyCompactList}\small\item\em codec для преобразования в широкий формат строки и обратно \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_a4fa1fd596bd312cbf0f7628ac72a60d5}\label{classCipher_a4fa1fd596bd312cbf0f7628ac72a60d5}} 
+int \mbox{\hyperlink{classCipher_a4fa1fd596bd312cbf0f7628ac72a60d5}{columns}}
+\begin{DoxyCompactList}\small\item\em Количество столбцов в таблице (ключ) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_ace25b12087068c25c945e2a32a236f9e}\label{classCipher_ace25b12087068c25c945e2a32a236f9e}} 
+int \mbox{\hyperlink{classCipher_ace25b12087068c25c945e2a32a236f9e}{rows}}
+\begin{DoxyCompactList}\small\item\em Количество строк в таблице \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCipher_a84f8e0da2b41787fa92554549963f052}\label{classCipher_a84f8e0da2b41787fa92554549963f052}} 
+int \mbox{\hyperlink{classCipher_a84f8e0da2b41787fa92554549963f052}{len\+\_\+text}}
+\begin{DoxyCompactList}\small\item\em Количество символов в слове \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шифрование методом табличной перестановки 
+
+Ключ устанавливается в конструкторе, а также с помощью метода set\+\_\+key. Для зашифрования и расшифрования предназначены методы encrypt и decrypt. Метод set\+\_\+tableform -\/ вспомогающий. Методы\+: get\+Valid\+Key, get\+Valid\+Open\+Text, get\+Valid\+Cipher\+Text -\/ специализируются на проверке входных данных. \begin{DoxyWarning}{Предупреждения}
+Реализация только для русского языка! С использованием wstring. Шифрование методом табличной перестановки 
+\end{DoxyWarning}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Cipher.\+hpp\end{DoxyCompactItemize}
